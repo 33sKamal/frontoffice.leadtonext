@@ -1,0 +1,22 @@
+apps:
+  - name: leadtonext-octane
+    script: artisan
+    args: octane:start --workers=4 --task-workers=6 --max-requests=250 --port=80 --host=0.0.0.0 --server=swoole
+    interpreter: php
+    cwd: /var/www/leadtonext.com/production/current
+    exec_mode: fork
+    instances: 1
+    max_memory_restart: 4G
+    env:
+      NODE_ENV: production
+      APP_NAME: leadtonext
+      APP_ENV: production
+    error_file: /var/log/leadtonext.com/production/octane/octane-error.log
+    out_file: /var/log/leadtonext.com/production/octane/octane-out.log
+    log_file: /var/log/leadtonext.com/production/octane/octane-combined.log
+    merge_logs: true
+    log_date_format: YYYY-MM-DD HH:mm Z
+    watch: true
+    ignore_watch:
+      - node_modules
+      - storage

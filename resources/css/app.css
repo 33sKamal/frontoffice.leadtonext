@@ -1,0 +1,5 @@
+.disabled {
+    opacity: 0.5 !important; /* reduces opacity for a faded appearance */
+    cursor: not-allowed !important; /* changes cursor to indicate unavailability */
+    pointer-events: none !important; /* prevents mouse interactions */
+}

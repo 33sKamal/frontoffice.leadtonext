@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'dashboards' => 'dashboards',
+    'roles' => 'roles',
+    'users' => 'users',
+    'managers' => 'managers',
+    'sellers' => 'sellers',
+    'agents' => 'agents',
+    'products' => 'products',
+    'stocks' => 'stocks',
+    'locations' => 'locations',
+    'cities' => 'cities',
+    'areas' => 'areas',
+    'leads' => 'leads',
+    'leads' => 'leads',
+    'orders' => 'orders',
+    'new' => 'new',
+    'packed' => 'packed',
+    'shipped' => 'shipped',
+    'waiting_for_shipping_company' => 'waiting for SC',
+    'returned' => 'returned',
+    'sources' => 'sources',
+    'sheets' => 'sheets',
+    'notifications' => 'notifications',
+    'invoices' => 'invoices',
+    'sourcings' => 'sourcings',
+    'sourcingAgents' => 'sourcing agents',
+    'settings' => 'settings',
+
+];

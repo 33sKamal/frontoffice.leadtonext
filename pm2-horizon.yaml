@@ -1,0 +1,22 @@
+apps:
+  - name: leadtonext-horizon
+    script: artisan
+    args: horizon
+    interpreter: php
+    cwd: /var/www/leadtonext.com/production/current
+    exec_mode: fork
+    instances: 1
+    max_memory_restart: 1G
+    env:
+      NODE_ENV: production
+      APP_NAME: leadtonext
+      APP_ENV: production
+    error_file: /var/log/leadtonext.com/production/horizon/horizon-error.log
+    out_file: /var/log/leadtonext.com/production/horizon/horizon-out.log
+    log_file: /var/log/leadtonext.com/production/horizon/horizon-combined.log
+    merge_logs: true
+    log_date_format: YYYY-MM-DD HH:mm Z
+    watch: true
+    ignore_watch:
+      - node_modules
+      - storage
