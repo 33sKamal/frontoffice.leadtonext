@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use App\Models\User\User;
+
 use App\Traits\Logger\LoggerTrait;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cache;

@@ -7,7 +7,7 @@ use App\Enums\Role\RoleEnum;
 use App\Enums\User\UserStatus;
 use App\Models\Account\Account;
 use App\Models\Role\Role;
-use App\Models\User\User;
+
 use App\Services\Balance\BalanceService;
 use App\Services\User\RegisterNewSellerService;
 use Faker\Factory;

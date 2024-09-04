@@ -1,7 +1,7 @@
 <?php
 
 use App\Models\Account\Account;
-use App\Models\User\User;
+
 use Illuminate\Support\Str;
 
 return [

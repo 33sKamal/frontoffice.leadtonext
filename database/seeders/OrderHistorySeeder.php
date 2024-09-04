@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use App\Enums\Role\RoleEnum;
 use App\Models\Order\Order;
 use App\Models\OrderHistory\OrderHistory;
-use App\Models\User\User;
+
 use Illuminate\Database\Seeder;
 
 class OrderHistorySeeder extends Seeder

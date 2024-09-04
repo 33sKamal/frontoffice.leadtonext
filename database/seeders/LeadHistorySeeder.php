@@ -7,7 +7,7 @@ use App\Enums\LeadHistory\LeadHistoryPayloadFieldEnum;
 use App\Enums\Role\RoleEnum;
 use App\Models\Lead\Lead;
 use App\Models\LeadHistory\LeadHistory;
-use App\Models\User\User;
+
 use Faker\Factory;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;

@@ -10,7 +10,7 @@ use App\Models\Country\Country;
 use App\Models\Lead\Lead;
 use App\Models\Order\Order;
 use App\Models\OrderProduct\OrderProduct;
-use App\Models\User\User;
+
 use Faker\Factory;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Auth;

@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use App\Enums\Product\ProductStatus;
 use App\Models\Category\Category;
 use App\Models\Product\Product;
-use App\Models\User\User;
+
 use App\Services\Product\ProductService;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\App;

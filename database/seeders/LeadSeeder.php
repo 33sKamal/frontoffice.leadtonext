@@ -8,7 +8,7 @@ use App\Models\City\City;
 use App\Models\Lead\Lead;
 use App\Models\LeadProduct\LeadProduct;
 use App\Models\Product\Product;
-use App\Models\User\User;
+
 use Faker\Factory;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Auth;

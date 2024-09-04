@@ -2,7 +2,7 @@
 
 use App\Models\Account\Account;
 use App\Models\PaymentMethod\PaymentMethod;
-use App\Models\User\User;
+
 use Laravel\Octane\Contracts\OperationTerminated;
 use Laravel\Octane\Events\RequestHandled;
 use Laravel\Octane\Events\RequestReceived;
