@@ -2,6 +2,8 @@
 
 @section('content')
 
+@component('frontoffice.layouts.components.contact')
+@endcomponent
 
 <div class="page-load">
     <div class="curtain">
@@ -149,7 +151,7 @@
                   transform: translate3d(0, 60%, 0) scale3d(1, 1, 1)
                     rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                 " class="paragraph__wrapper margin-bottom hero">
-                        <p class="h6 hero_paragraph">
+                        <p class="h4 hero_paragraph">
                             Our powerful, scalable system excels in managing leads, call centers, and shipping, with real-time notifications and rapid response for unparalleled efficiency and performance
                         </p>
                     </div>
@@ -381,7 +383,7 @@
                             <h2 class="h3__bottom-margin is--bgtext-success">
                                 $0 Subscription Fee
                             </h2>
-                            <div class="h6 is--bgtext-success">
+                            <div class="font-size-b is--bgtext-success">
                                 Enjoy our services with no subscription fee. Access all features without any upfront costs or ongoing charges
                             </div>
                         </div>
@@ -405,7 +407,7 @@
                             <h3 class="h3__bottom-margin is--bgtext-success">
                                 $0 Hidden Fees
                             </h3>
-                            <div class="h6 is--bgtext-success">
+                            <div class="font-size-b is--bgtext-success">
                                 Experience transparency with $0 hidden fees. We ensure you only pay for what you use, with no surprises or additional costs
                             </div>
                         </div>
@@ -430,7 +432,7 @@
                             <h3 class="h3__bottom-margin is--bgtext-success">
                                 Pay Only for Delivered Orders
                             </h3>
-                            <div class="h6 is--bgtext-success">
+                            <div class="font-size-b is--bgtext-success">
                                 Pay only for delivered orders, including packaging, call center, and shipping fees
                             </div>
                         </div>
@@ -449,7 +451,7 @@
                         </h2>
                     </div>
                     <div class="paragraph__wrapper">
-                        <p class="h6 is--bgtext-white">
+                        <p class="font-size-a is--bgtext-white">
                             We're dedicated to your success, providing free tools and support to help you grow. Only packaging, confirmation, and delivery fees apply
                         </p>
                     </div>
@@ -505,7 +507,6 @@
     </div>
 </section>
 
-
 <section class="section__payment-grid" id="services">
     <div class="padding-section__large">
         <div class="container-medium">
@@ -520,9 +521,6 @@
                         <div class="bank__box">
                             <div class="bank__logo">
                                 <div class="w-embed">
-                                    {{-- <svg width="100%" height="100%" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M22.2378 0.267503C20.8744 0.267503 20.5926 0.486204 20.1501 0.940153C19.9684 0.930149 19.7864 0.925618 19.6044 0.926575C18.5557 0.926575 17.2087 1.06832 16.06 1.77564C14.9506 2.44977 14.423 3.64269 15.0145 4.5159C15.0145 4.5159 15.4111 3.98054 16.7155 3.98054C16.899 3.98054 17.1022 3.99861 17.3185 4.01519C19.121 4.21125 20.4549 5.08447 20.2927 7.39041C20.1485 9.69484 19.2095 12.2647 15.3685 12.2949C15.3685 12.2949 14.8736 12.2949 14.346 12.2496C12.5582 12.0702 11.9961 11.0371 11.9961 11.0371C11.9961 11.0371 13.5414 10.651 13.5545 8.84575C13.5414 7.61813 12.3796 6.49459 10.7032 6.04065C10.1243 5.8902 9.52515 5.81607 8.92363 5.82046C6.9474 5.82046 4.72864 6.58206 3.23254 8.37975C-0.15949 12.5015 -0.434785 18.5099 0.39274 24.0975C1.22518 29.6972 5.08424 34.8838 5.1973 35.0255C5.27924 35.125 5.35298 35.1793 5.43655 35.1793C5.48613 35.1765 5.53308 35.1578 5.56928 35.1265C7.2358 33.638 8.82531 31.6035 9.50535 30.2432C10.2329 30.7771 9.85275 31.9127 9.45291 33.1252C9.07274 34.3649 8.14854 36.0102 7.81425 36.5411C7.49143 37.0599 7.05883 37.6632 7.64055 37.9784C7.70881 38.0142 7.78651 38.0319 7.86505 38.0296C8.61228 38.0296 10.3706 36.8307 12.332 34.4237C14.5279 31.7151 15.6421 29.3111 15.6421 29.3111C15.8027 29.3443 16.0715 29.5947 16.0272 30.2764C15.9977 30.9686 15.2243 33.5445 13.7184 35.9424C12.196 38.3388 10.7901 39.838 10.5066 40.1788C10.3312 40.3764 10.4804 40.5 10.5934 40.5799C10.7049 40.6493 13.3972 42.9628 17.3087 44.9173C21.9428 47.1901 23.9977 47.5988 23.9977 47.5988C23.9977 47.5988 26.0477 47.2006 30.6818 44.9294C34.5917 42.9718 37.2955 40.6478 37.3954 40.5694C37.5085 40.4985 37.6527 40.3869 37.4823 40.1697C37.2152 39.8439 35.8043 38.3374 34.2852 35.9409C32.7842 33.5596 31.9813 30.9671 31.9698 30.2839C31.9387 29.5947 32.191 29.3669 32.3451 29.3096C32.3451 29.3096 33.4708 31.7287 35.6666 34.4222C37.6379 36.8322 39.3798 38.0282 40.1303 38.0282C40.2115 38.0306 40.2919 38.0129 40.363 37.9769C40.9267 37.6617 40.5072 37.0494 40.1762 36.5366C39.8682 36.0087 38.9308 34.374 38.5326 33.1237C38.1508 31.8976 37.7543 30.7635 38.495 30.2417C39.1766 31.602 40.7547 33.647 42.4261 35.1144C42.4443 35.1334 42.4664 35.1488 42.4912 35.1597C42.516 35.1706 42.5429 35.1767 42.5703 35.1778C42.6441 35.1778 42.7227 35.125 42.7915 35.033C42.9144 34.8822 46.78 29.7048 47.6059 24.096C48.4351 18.4963 48.1614 12.5015 44.7661 8.37824C43.2799 6.57601 41.0447 5.80988 39.0554 5.80988C38.4343 5.80988 37.8411 5.8838 37.2987 6.02707C35.6093 6.49459 34.4524 7.62872 34.4622 8.84428C34.4622 10.6495 36.0157 11.0356 36.0157 11.0356C36.0157 11.0356 35.4962 12.043 33.6445 12.2481C33.3118 12.286 32.9769 12.3052 32.6417 12.3054C31.2488 12.3054 30.0755 11.8982 28.994 10.4927C27.9452 9.13985 27.9797 6.35435 27.919 5.42534C27.8715 4.48276 27.6519 2.36836 26.5753 1.5057C25.502 0.620428 24.1943 0.323283 22.5639 0.264465C22.4442 0.267482 22.3377 0.267503 22.2378 0.267503Z" fill="#00AFE9" />
-                                    </svg> --}}
 
                                     <svg width="100%" height="100%" viewBox="-18 0 292 292" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
                                         <g>
@@ -539,29 +537,26 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="bank___name">
-                                <div class="p-tiny is--bgtext-gray text-center">
-                                    Shopify
-                                </div>
-                            </div>
                         </div>
                         <div class="bank__box">
                             <div class="bank__logo">
                                 <div class="w-embed">
-                                    {{-- <svg width="100%" height="100%" viewBox="0 0 56 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M42.0082 26.1204L56 13.2507L42.0082 0.350769V26.1204ZM14.0247 0.350769L28.0165 13.2507L42.0082 0.350769H14.0247ZM14.0247 0.350769L0 13.2507L14.0247 26.1204V0.350769ZM42.0082 26.1204L28.0165 13.2507L14.0247 26.1204H42.0082Z" fill="#DB0011" />
-                                    </svg> --}}
-                                    <svg width="100%" height="100%" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="168" height="42" viewBox="0 0 168 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M163.887 19.4599C163.435 19.2429 162.984 19.1336 162.533 19.1336C162.064 19.1336 161.655 19.2304 161.304 19.4224C160.953 19.6149 160.777 19.8618 160.777 20.1631C160.777 20.4481 160.923 20.6737 161.216 20.8407C161.508 21.0082 161.906 21.1589 162.407 21.2926L164.288 21.7446C165.542 22.0458 166.474 22.5271 167.085 23.1879C167.695 23.8492 168 24.6318 168 25.5356C168 26.0713 167.875 26.5814 167.624 27.0665C167.373 27.5522 167.017 27.9829 166.558 28.3598C166.098 28.7361 165.546 29.0336 164.903 29.2511C164.259 29.4681 163.544 29.5774 162.758 29.5774C161.956 29.5774 161.241 29.4768 160.614 29.2761C159.987 29.0749 159.443 28.8117 158.984 28.4854C158.524 28.1585 158.135 27.7822 157.817 27.3553C157.5 26.9289 157.257 26.4982 157.09 26.0626L160.024 24.8074C160.309 25.4437 160.689 25.9163 161.166 26.2258C161.642 26.5358 162.173 26.6902 162.758 26.6902C163.36 26.6902 163.837 26.5814 164.188 26.3639C164.539 26.1464 164.715 25.887 164.715 25.5857C164.715 25.2512 164.568 24.9793 164.275 24.7699C163.983 24.5605 163.477 24.3724 162.758 24.2049L161.028 23.8285C160.643 23.7448 160.246 23.611 159.836 23.4266C159.426 23.2428 159.054 23.0084 158.72 22.7235C158.386 22.439 158.11 22.0959 157.892 21.6945C157.675 21.2926 157.567 20.8244 157.567 20.2887C157.567 19.6861 157.696 19.1505 157.955 18.6817C158.214 18.2134 158.57 17.8159 159.021 17.4896C159.472 17.1633 160.003 16.912 160.614 16.7364C161.224 16.5607 161.88 16.4726 162.583 16.4726C163.753 16.4726 164.798 16.7027 165.718 17.1633C166.637 17.6234 167.314 18.3554 167.749 19.3598L164.915 20.5144C164.681 20.0293 164.338 19.678 163.887 19.4599ZM152.174 11H155.46V29.1755H152.174V11ZM150.268 23.778H141.013C141.08 24.2799 141.218 24.7112 141.427 25.0712C141.636 25.4312 141.895 25.7325 142.204 25.9745C142.514 26.2176 142.852 26.3933 143.221 26.502C143.588 26.6108 143.964 26.6652 144.349 26.6652C145.101 26.6652 145.724 26.4939 146.218 26.1507C146.71 25.8076 147.099 25.3763 147.383 24.8575L150.117 26.2133C149.549 27.2172 148.784 28.0291 147.823 28.6485C146.861 29.2674 145.686 29.5774 144.299 29.5774C143.362 29.5774 142.497 29.4143 141.703 29.0874C140.909 28.7611 140.219 28.3054 139.634 27.7197C139.048 27.134 138.593 26.4433 138.267 25.6482C137.941 24.8537 137.778 23.9792 137.778 23.0248C137.778 22.1383 137.936 21.297 138.255 20.5019C138.572 19.7074 139.015 19.0123 139.583 18.4185C140.152 17.8246 140.825 17.3515 141.602 16.9996C142.38 16.6483 143.237 16.4726 144.173 16.4726C145.159 16.4726 146.038 16.6358 146.807 16.9621C147.576 17.2884 148.22 17.7403 148.738 18.3179C149.256 18.8954 149.649 19.5774 149.917 20.3638C150.184 21.1507 150.318 22.0045 150.318 22.9247C150.318 23.0416 150.318 23.1422 150.318 23.226C150.301 23.326 150.293 23.4185 150.293 23.5017C150.276 23.586 150.268 23.6779 150.268 23.778ZM146.92 20.7151C146.795 20.4481 146.61 20.1968 146.368 19.9624C146.125 19.728 145.824 19.5355 145.465 19.3849C145.105 19.2342 144.675 19.1586 144.173 19.1586C143.471 19.1586 142.852 19.3598 142.317 19.7612C141.782 20.1631 141.406 20.7238 141.189 21.4433H147.133C147.116 21.2263 147.045 20.9832 146.92 20.7151ZM132.737 22.1214C132.737 21.2344 132.54 20.5775 132.148 20.1506C131.755 19.7237 131.182 19.5105 130.429 19.5105C129.978 19.5105 129.581 19.6067 129.238 19.7993C128.895 19.9918 128.603 20.2506 128.36 20.5775C128.117 20.9038 127.934 21.2888 127.809 21.7321C127.683 22.1758 127.62 22.6484 127.62 23.1504V29.1755H124.335V16.8745H127.42V18.481H127.62C128.005 17.8621 128.523 17.3727 129.176 17.0126C129.828 16.6526 130.571 16.4726 131.408 16.4726C132.177 16.4726 132.853 16.5982 133.439 16.8495C134.024 17.1002 134.505 17.4559 134.881 17.916C135.257 18.3766 135.542 18.9291 135.734 19.573C135.926 20.2175 136.022 20.9332 136.022 21.7195V29.1755H132.737V22.1214ZM118.592 22.1214C118.592 21.2344 118.395 20.5775 118.002 20.1506C117.609 19.7237 117.037 19.5105 116.284 19.5105C115.833 19.5105 115.435 19.6067 115.093 19.7993C114.75 19.9918 114.457 20.2506 114.215 20.5775C113.973 20.9038 113.789 21.2888 113.663 21.7321C113.538 22.1758 113.475 22.6484 113.475 23.1504V29.1755H110.19V16.8745H113.274V18.481H113.475C113.859 17.8621 114.378 17.3727 115.03 17.0126C115.682 16.6526 116.426 16.4726 117.262 16.4726C118.031 16.4726 118.709 16.5982 119.294 16.8495C119.879 17.1002 120.36 17.4559 120.736 17.916C121.112 18.3766 121.396 18.9291 121.589 19.573C121.781 20.2175 121.877 20.9332 121.877 21.7195V29.1755H118.592V22.1214ZM104.547 27.569H104.346C103.961 28.1885 103.443 28.6779 102.791 29.0374C102.139 29.3974 101.395 29.5774 100.559 29.5774C99.0038 29.5774 97.8456 29.1005 97.0855 28.146C96.3242 27.1922 95.9442 25.9207 95.9442 24.3305V16.8745H99.2295V23.9286C99.2295 24.8161 99.4257 25.4726 99.8189 25.8995C100.211 26.3264 100.785 26.5396 101.537 26.5396C101.988 26.5396 102.385 26.4433 102.728 26.2508C103.071 26.0588 103.364 25.7989 103.606 25.4726C103.849 25.1463 104.032 24.7612 104.158 24.318C104.284 23.8748 104.346 23.4016 104.346 22.8997V16.8745H107.631V29.1755H104.547V27.569ZM73.0872 22.1214C73.0872 21.2676 72.8866 20.6194 72.4853 20.1756C72.084 19.7324 71.5234 19.5105 70.8046 19.5105C70.3533 19.5105 69.952 19.6067 69.6008 19.7993C69.2495 19.9918 68.9526 20.255 68.7107 20.59C68.4681 20.925 68.2844 21.3138 68.1588 21.7571C68.0332 22.2008 67.9706 22.6734 67.9706 23.1754V29.1755H64.6853V11H67.9706V16.2469L67.77 18.481H67.9706C68.3219 17.8953 68.827 17.414 69.4882 17.0377C70.1483 16.6608 70.8883 16.4726 71.7078 16.4726C73.296 16.4726 74.4705 16.9414 75.2312 17.8784C75.9919 18.816 76.3725 20.0962 76.3725 21.7195V29.1755H73.0872V22.1214ZM60.3212 33.2048C59.753 33.7823 59.0712 34.2256 58.2773 34.5356C57.4829 34.845 56.6009 35 55.6314 35C54.762 35 53.9888 34.8869 53.3113 34.6606C52.6343 34.435 52.0449 34.1418 51.543 33.7823C51.0417 33.4223 50.6236 33.0248 50.2892 32.5897C49.9548 32.1541 49.7122 31.7196 49.5616 31.2845L52.6969 30.0293C52.9307 30.6819 53.3151 31.1877 53.8507 31.5477C54.3857 31.9077 54.9795 32.0878 55.6314 32.0878C56.6678 32.0878 57.4872 31.7506 58.0892 31.0779C58.6911 30.404 58.9923 29.4773 58.9923 28.2967V27.4434H58.7917C58.4067 27.9791 57.901 28.4016 57.2741 28.7111C56.6472 29.0211 55.9071 29.1755 55.0545 29.1755C54.3188 29.1755 53.6038 29.0265 52.91 28.7285C52.2162 28.4305 51.6018 28.0036 51.0667 27.4483C50.5311 26.893 50.0967 26.2258 49.7623 25.447C49.4279 24.6677 49.2609 23.7975 49.2609 22.8366C49.2609 21.8756 49.4279 21.0011 49.7623 20.2142C50.0967 19.4267 50.5311 18.7556 51.0667 18.2004C51.6018 17.6451 52.2162 17.2182 52.91 16.9202C53.6038 16.6222 54.3188 16.4726 55.0545 16.4726C55.9071 16.4726 56.6472 16.6276 57.2741 16.9371C57.901 17.247 58.4067 17.6696 58.7917 18.2047H58.9923V16.8745H62.127V28.2967C62.127 29.3343 61.9682 30.2675 61.6507 31.0958C61.3331 31.9246 60.8894 32.6272 60.3212 33.2048ZM58.7161 21.3824C58.5323 20.9549 58.2898 20.5976 57.9891 20.3099C57.6879 20.0228 57.341 19.8047 56.9478 19.6568C56.5553 19.5089 56.1583 19.4349 55.757 19.4349C55.3552 19.4349 54.9626 19.5089 54.5782 19.6568C54.1932 19.8047 53.8507 20.0266 53.5494 20.3224C53.2488 20.6183 53.0062 20.9756 52.8225 21.3949C52.6381 21.8136 52.5462 22.2944 52.5462 22.836C52.5462 23.3788 52.6381 23.8595 52.8225 24.2788C53.0062 24.6976 53.2488 25.0511 53.5494 25.3382C53.8507 25.6259 54.1932 25.844 54.5782 25.9914C54.9626 26.1393 55.3552 26.2133 55.757 26.2133C56.1583 26.2133 56.5553 26.1393 56.9478 25.9914C57.341 25.844 57.6879 25.6259 57.9891 25.3382C58.2898 25.0511 58.5323 24.6976 58.7161 24.2788C58.8999 23.8595 58.9923 23.3788 58.9923 22.836C58.9923 22.2944 58.8999 21.8098 58.7161 21.3824ZM45.6744 15.2174C45.39 15.2174 45.1181 15.1631 44.8593 15.0543C44.6 14.9455 44.3743 14.7949 44.1824 14.6024C43.9899 14.4104 43.8393 14.188 43.7305 13.9373C43.6218 13.686 43.5674 13.4097 43.5674 13.1085C43.5674 12.8072 43.6218 12.5314 43.7305 12.2802C43.8393 12.0289 43.9899 11.8076 44.1824 11.6151C44.3743 11.4226 44.6 11.2719 44.8593 11.1632C45.1181 11.0544 45.39 11 45.6744 11C46.2595 11 46.7613 11.205 47.1795 11.6151C47.5971 12.0251 47.8064 12.5227 47.8064 13.1085C47.8064 13.6947 47.5971 14.1923 47.1795 14.6024C46.7613 15.0124 46.2595 15.2174 45.6744 15.2174ZM38 11H41.2853V29.1755H38V11ZM47.3296 29.1755H44.0443V16.8745H47.3296V29.1755Z" fill="#2D3032" />
+                                        <path d="M93.574 14.188C93.3815 14.1379 93.1433 14.1129 92.8589 14.1129C92.3739 14.1129 91.9895 14.2723 91.7051 14.5899C91.4207 14.908 91.2788 15.3431 91.2788 15.8951V16.8745H94.339V19.6861H91.2788V29.1755H87.9935V19.6861H86.7652H85.0064H82.8431V24.4561C82.8431 24.7406 82.8725 25.0043 82.9312 25.2469C82.9894 25.4894 83.1025 25.6944 83.2699 25.8619C83.5038 26.1295 83.8382 26.2633 84.2732 26.2633C84.507 26.2633 84.7076 26.2383 84.8751 26.1882C85.042 26.1377 85.2258 26.0713 85.4264 25.987L85.6526 29.0749C85.3177 29.1918 85.0045 29.2718 84.7119 29.3137C84.4189 29.355 84.0638 29.3762 83.6462 29.3762C83.0274 29.3762 82.4712 29.2799 81.978 29.0874C81.4848 28.8954 81.071 28.6317 80.7366 28.2967C79.9504 27.5435 79.5578 26.4727 79.5578 25.0837V19.6861H77.4008V16.8745H79.5578V13.1085H82.8431V16.8745H85.0064H86.7652H87.9935V15.6694C87.9935 14.9162 88.1061 14.251 88.3317 13.6735C88.5579 13.0959 88.8793 12.6108 89.2974 12.2176C89.7156 11.8245 90.2087 11.5232 90.7775 11.3138C91.3457 11.1044 91.9726 11 92.6583 11C93.1265 11 93.5615 11.0419 93.9627 11.1256C94.364 11.2094 94.7234 11.3181 95.041 11.4519L94.1128 14.3892C93.9459 14.3054 93.7659 14.2385 93.574 14.188Z" fill="#2D3032" />
                                         <g clip-path="url(#clip0)">
-                                            <path d="M1.64312 22.9092C-0.0011885 21.2649 -0.0011884 18.5989 1.64312 16.9546L17.2739 1.32381C18.836 -0.238286 21.3687 -0.238286 22.9308 1.32381V1.32381C24.4929 2.88591 24.4929 5.41857 22.9308 6.98067L4.62042 25.291C4.45598 25.4554 4.18939 25.4554 4.02496 25.291L1.64312 22.9092Z" fill="#2A8CFF" />
-                                            <path d="M11.1706 21.7181C11.335 21.5536 11.6016 21.5536 11.7661 21.7181L22.9309 32.8829C24.493 34.445 24.493 36.9777 22.9309 38.5398V38.5398C21.3688 40.1019 18.8361 40.1019 17.274 38.5398L6.1092 27.3749C5.94477 27.2105 5.94477 26.9439 6.1092 26.7795L11.1706 21.7181Z" fill="#FB005E" />
-                                            <path d="M13.2542 20.2296C13.0898 20.0652 13.0898 19.7986 13.2542 19.6342L17.3461 15.5423C18.8681 14.0202 21.3358 14.0202 22.8579 15.5423V15.5423C24.46 17.1444 24.46 19.742 22.8579 21.3442L18.9111 25.291C18.7466 25.4554 18.48 25.4554 18.3156 25.291L13.2542 20.2296Z" fill="#FFC108" />
+                                            <path d="M1.72534 24.0547C-0.00118819 22.3282 -0.00118994 19.5289 1.72534 17.8024L18.1377 1.39008C19.7779 -0.250122 22.4372 -0.250119 24.0774 1.39008V1.39008C25.7176 3.03028 25.7176 5.68958 24.0774 7.32978L4.85149 26.5556C4.67884 26.7283 4.39892 26.7283 4.22626 26.5556L1.72534 24.0547Z" fill="#2A8CFF" />
+                                            <path d="M11.7291 22.8042C11.9017 22.6316 12.1816 22.6316 12.3543 22.8042L24.0774 34.5273C25.7176 36.1675 25.7176 38.8268 24.0774 40.467V40.467C22.4372 42.1072 19.7779 42.1072 18.1377 40.467L6.4146 28.7439C6.24195 28.5713 6.24195 28.2914 6.41461 28.1187L11.7291 22.8042Z" fill="#FB005E" />
+                                            <path d="M13.9174 21.2412C13.7447 21.0685 13.7447 20.7886 13.9174 20.6159L18.2138 16.3195C19.812 14.7213 22.4031 14.7213 24.0012 16.3195V16.3195C25.6835 18.0017 25.6835 20.7292 24.0012 22.4115L19.857 26.5556C19.6844 26.7283 19.4045 26.7283 19.2318 26.5556L13.9174 21.2412Z" fill="#FFC108" />
                                         </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                <rect width="26" height="42" fill="white" />
+                                            </clipPath>
+                                        </defs>
                                     </svg>
+
                                 </div>
-                            </div>
-                            <div class="bank___name">
-                                <div class="p-tiny is--bgtext-gray text-center">lightfunnels</div>
                             </div>
                         </div>
                     </div>
@@ -569,28 +564,7 @@
                         <div class="bank__box">
                             <div class="bank__logo">
                                 <div class="bank-logo-embed w-embed">
-                                    <svg width="100" height="100" viewBox="0 0 88 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.66619 10.2119V15.6693H6.06752V10.1705L0 0.248047H3.84974L8.03424 7.1111L12.2187 0.248047H15.7756L9.66619 10.2119Z" fill="#B83375" />
-                                        <path d="M14.7715 9.75704C14.7715 6.20149 17.5751 3.63818 21.383 3.63818C25.1909 3.63818 27.9527 6.16014 27.9527 9.75704C27.9527 13.3126 25.1909 15.8759 21.383 15.8759C17.5751 15.8759 14.7715 13.3539 14.7715 9.75704ZM24.4377 9.75704C24.4377 7.68986 23.1405 6.44955 21.383 6.44955C19.6255 6.44955 18.2865 7.68986 18.2865 9.75704C18.2865 11.8242 19.6255 13.0645 21.383 13.0645C23.0986 13.0645 24.4377 11.8242 24.4377 9.75704Z" fill="#B83375" />
-                                        <path d="M42.3878 3.84497V15.7106H39.0821V14.3049C38.1615 15.3385 36.8224 15.876 35.3579 15.876C32.345 15.876 30.2109 14.1809 30.2109 10.5427V3.84497H33.6841V10.0465C33.6841 12.031 34.5628 12.8992 36.1111 12.8992C37.7012 12.8992 38.8728 11.8656 38.8728 9.71578V3.84497H42.3878Z" fill="#B83375" />
-                                        <path d="M44.8994 7.97933C44.8994 3.30749 48.4981 0 53.394 0C56.1139 0 58.3735 0.950895 59.8381 2.72867L57.4948 4.8372C56.4486 3.63824 55.1096 3.01808 53.5613 3.01808C50.6322 3.01808 48.5399 5.04392 48.5399 7.97933C48.5399 10.8734 50.6322 12.9406 53.5613 12.9406C55.1096 12.9406 56.4486 12.3204 57.4948 11.1214L59.8381 13.23C58.3735 15.0078 56.1139 16 53.394 16C48.4981 15.9587 44.8994 12.6512 44.8994 7.97933Z" fill="#B83375" />
-                                        <path d="M72.5584 8.93017V15.7105H69.2945V14.2222C68.6669 15.2971 67.4115 15.8759 65.6122 15.8759C62.8086 15.8759 61.1348 14.3462 61.1348 12.279C61.1348 10.1705 62.6412 8.72345 66.2817 8.72345H69.0435C69.0435 7.23508 68.1647 6.36687 66.2817 6.36687C65.0263 6.36687 63.6873 6.7803 62.8086 7.48314L61.5532 5.08521C62.8504 4.17565 64.8171 3.63818 66.742 3.63818C70.4244 3.63818 72.5584 5.33327 72.5584 8.93017ZM69.0435 11.9483V10.7493H66.6583C65.0263 10.7493 64.5242 11.3281 64.5242 12.155C64.5242 13.0232 65.2774 13.602 66.4909 13.602C67.6626 13.5607 68.6669 13.0232 69.0435 11.9483Z" fill="#B83375" />
-                                        <path d="M87.9998 8.88884V15.6692H84.5267V9.4263C84.5267 7.52449 83.648 6.61493 82.0997 6.61493C80.4259 6.61493 79.2124 7.64852 79.2124 9.79839V15.6692H75.7393V3.80356H79.0869V5.20924C80.0074 4.17565 81.4302 3.63818 83.0621 3.63818C85.8239 3.63818 87.9998 5.29194 87.9998 8.88884Z" fill="#B83375" />
-                                    </svg>
-
-
-                                    {{-- <svg width="100%" height="100%" viewBox="0 0 56 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M32.6129 30.8098C32.6129 28.3835 30.4807 26.4133 27.8262 26.4133C25.191 26.4173 23.0437 28.3835 23.0394 30.8098C23.0437 33.2361 25.191 35.2043 27.8262 35.2083C30.4807 35.2043 32.6129 33.2361 32.6129 30.8098Z" fill="#1E357A" />
-                                        <path d="M32.6129 4.63371C32.6129 2.20546 30.4807 0.235229 27.8262 0.235229C25.191 0.239178 23.0437 2.20546 23.0394 4.63371C23.0437 7.058 25.191 9.02824 27.8262 9.03021C30.4807 9.02824 32.6129 7.058 32.6129 4.63371Z" fill="#1E357A" />
-                                        <path d="M4.78675 13.3652C7.44128 13.3652 9.5735 15.3354 9.5735 17.7637C9.5735 20.1899 7.44128 22.1582 4.78675 22.1622C2.15157 22.1582 0.00644825 20.1899 0 17.7637C0.00644825 15.3354 2.15157 13.3691 4.78675 13.3652Z" fill="#1E357A" />
-                                        <path d="M56 17.7628C56 15.3346 53.8678 13.3643 51.2133 13.3643C48.5781 13.3683 46.4308 15.3346 46.4265 17.7628C46.4308 20.1891 48.5781 22.1554 51.2133 22.1613C53.8678 22.1554 56 20.1891 56 17.7628Z" fill="#1E357A" />
-                                        <path d="M49.4641 1.7032V9.94146L35.2371 17.7671L49.4641 25.5888V33.831L27.8195 21.8122L6.18995 33.831V25.5888L20.4062 17.7671L6.18995 9.93159V1.69531L27.8174 13.7279L27.9334 13.6648L49.4641 1.7032Z" fill="#1E357A" />
-                                    </svg> --}}
-                                </div>
-                            </div>
-                            <div class="bank___name">
-                                <div class="p-tiny is--bgtext-gray text-center">
-                                    YouCan
+                                    <img src="/front-office/images/logos/youcan.png" alt="" style="width:100%;">
                                 </div>
                             </div>
                         </div>
@@ -603,11 +577,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="bank___name">
-                                <div class="p-tiny is--bgtext-gray text-center">
-                                    API
-                                </div>
-                            </div>
+
                         </div>
                         <div class="bank__box">
                             <div class="bank__logo">
@@ -630,11 +600,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="bank___name">
-                                <div class="p-tiny is--bgtext-gray text-center">
-                                    Sheets
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                     <div data-w-id="52ae9875-6e39-a154-a95f-133edb092981" style="opacity: 0" class="p-banks__wrap last">
@@ -648,7 +614,7 @@
                                             </g>
                                         </svg>
                                     </div>
-                                    
+
                                     {{--
                                     <svg width="100%" height="100%" viewBox="0 0 56 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M17.0516 27.1102L16.9514 27.1995C15.337 28.7133 13.4682 29.5158 11.5424 29.5158C7.5233 29.5158 4.60562 26.7407 4.60562 22.9115C4.60562 19.0896 7.5233 16.3106 11.5426 16.3106C13.4682 16.3106 15.337 17.1161 16.9515 18.6341L17.0518 18.726L19.6365 15.8494L19.5675 15.7712C17.4177 13.4335 14.8383 12.2951 11.6673 12.2951C8.48532 12.2951 5.57654 13.2806 3.48032 15.0582C1.20249 16.9829 0 19.6974 0 22.9116C0 26.1241 1.20249 28.8454 3.48032 30.7707C5.57654 32.5563 8.48532 33.5364 11.6673 33.5364C14.8383 33.5364 17.4177 32.399 19.5675 30.0601L19.6365 29.9875L17.0516 27.1102ZM22.2486 33.145H26.8151V12.6285H22.2486V33.145ZM44.7026 28.6839C43.4842 29.3664 42.3504 29.7098 41.3322 29.7098C39.8569 29.7098 39.1902 28.9931 39.1902 27.3968V16.5109H43.841V12.6472H39.1902V6.26343L34.7143 8.4676V12.647H30.853V16.5107H34.7143V28.091C34.7143 31.246 36.7451 33.4016 39.7765 33.4577C41.8348 33.4948 43.0755 32.9305 43.8291 32.5178L43.8733 32.4877L44.9725 28.5317L44.7026 28.6837V28.6839ZM48.4846 33.145H53.0543V12.6285H48.4846V33.145Z" fill="#003B70" />
@@ -657,11 +623,7 @@
 
                                 </div>
                             </div>
-                            <div class="bank___name">
-                                <div class="p-tiny is--bgtext-gray text-center">
-                                    Shopyan
-                                </div>
-                            </div>
+
                         </div>
                         <div class="bank__box">
                             <div class="bank__logo">
@@ -677,9 +639,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="bank___name">
-                                <div class="p-tiny is--bgtext-gray text-center">Whatsapp</div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -770,7 +730,7 @@
     </div>
 </section>
 
-<section id="conversion-wizard" class="section__wizard">
+<section id="mobile" class="section__wizard">
     <div class="padding-section__large">
         <div class="container-large">
             <div class="wizard__parent">
@@ -809,7 +769,7 @@
                                 <br />‍<span class="next-line">Data Tracking</span>
                             </h2>
                         </div>
-                        <p>
+                        <p class="font-size-a">
                             LeadToNext keeps you updated with instant mobile notifications and seamless data tracking.
                         </p>
                     </div>
@@ -886,9 +846,6 @@
                                             <img src="/front-office/images/logo.png" loading="lazy" alt="Logo LeadToNext" class="img-full" />
                                         </div>
                                     </div>
-                                    <h3 class="h3__bottom-margin is--bgtext-black">
-                                        LeadToNext
-                                    </h3>
                                 </div>
                                 <div class="arrow__embed-svg w-embed">
                                     <svg width="48" height="38" viewBox="0 0 48 38" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -1052,7 +1009,7 @@
                         <div class="content-headings__wrapper">
                             <h3 class="h4">Developer-First Design</h3>
                         </div>
-                        <p class="p-body text-opacity">
+                        <p class="p-body text-opacity font-size-c">
                             Move from lead capture to fulfillment seamlessly with LeadToNext’s powerful APIs. Our comprehensive documentation, real-time data, and code examples equip developers to efficiently manage the entire sales process, from confirmation to payout
                         </p>
                     </div>
@@ -1083,7 +1040,7 @@
                                 <span data-underline="sm" class="js-text-underline">one place</span>
                             </h3>
                         </div>
-                        <p class="p-body text-opacity">
+                        <p class="p-body text-opacity font-size-c">
                             Streamline your operations by managing all your orders and sales through a single, powerful API. Access and control every transaction in one centralized platform, ensuring seamless integration and real-time updates
                         </p>
                     </div>
@@ -1100,7 +1057,7 @@
                         <div class="subtitle__wrap">
                             <p class="h5 italic">Sales management simplified.</p>
                         </div>
-                        <p class="p-body text-opacity">
+                        <p class="p-body text-opacity font-size-c">
                             Dashboard Intelligence provides sellers with real-time insights and analytics to optimize performance, track sales, and make data-driven decisions, all from one intuitive interface.
                         </p>
                     </div>
@@ -1119,7 +1076,7 @@
         <div class="container-small">
             <div class="p-evolution__title">
                 <h2 class="h3 is--bgtext-black text-center mobile">
-                    <span class="js-text-circle">LeadToNext</span> vs. C******: Which Offers More?
+                    <strong><span class="js-text-circle">LeadToNext</span></strong> vs. <strong>Others</strong> Which Offers More?
                 </h2>
             </div>
 
@@ -1136,15 +1093,15 @@
                         <div class=" is--bgtext-darker">
                             <ul>
 
-                                <li style="margin-bottom: 1rem;font-weight:bolder;list-style-type: none;"> Subscription Fee</li>
-                                <li style="margin-bottom: 1rem;font-weight:bolder;list-style-type: none;"> Extra Fees</li>
-                                <li style="margin-bottom: 1rem;font-weight:bolder;list-style-type: none;"> Lead Management</li>
-                                <li style="margin-bottom: 1rem;font-weight:bolder;list-style-type: none;"> Call Center</li>
-                                <li style="margin-bottom: 1rem;font-weight:bolder;list-style-type: none;"> Notifications</li>
-                                <li style="margin-bottom: 1rem;font-weight:bolder;list-style-type: none;"> Payment Processing</li>
-                                <li style="margin-bottom: 1rem;font-weight:bolder;list-style-type: none;"> Scalability</li>
-                                <li style="margin-bottom: 1rem;font-weight:bolder;list-style-type: none;"> Custom Offers</li>
-                                <li style="margin-bottom: 1rem;font-weight:bolder;list-style-type: none;"> Efficiency</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem;font-weight:bolder;list-style-type: none;"> Subscription Fee</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem;font-weight:bolder;list-style-type: none;"> Extra Fees</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem;font-weight:bolder;list-style-type: none;"> Lead Management</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem;font-weight:bolder;list-style-type: none;"> Call Center</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem;font-weight:bolder;list-style-type: none;"> Notifications</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem;font-weight:bolder;list-style-type: none;"> Payment Processing</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem;font-weight:bolder;list-style-type: none;"> Scalability</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem;font-weight:bolder;list-style-type: none;"> Custom Offers</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem;font-weight:bolder;list-style-type: none;"> Efficiency</li>
                             </ul>
                         </div>
                     </div>
@@ -1153,21 +1110,22 @@
                 <div data-w-id="d5e72647-84c7-a75f-bdfc-cdb5292d886f" style="opacity: 0" class="p-evolution_child">
 
                     <div style="height: 7vh; text-align:center">
+                        <h1>Others</h1>
                         <img src="s" alt="" style="max-height: 100%">
                     </div>
 
                     <div class="evolution-text" style="margin-top: 3rem">
                         <div class=" is--bgtext-darker">
                             <ul>
-                                <li style="margin-bottom: 1rem"> Subscription Fee Required</li>
-                                <li style="margin-bottom: 1rem"> Additional Fees</li>
-                                <li style="margin-bottom: 1rem"> Standard Lead Management</li>
-                                <li style="margin-bottom: 1rem"> Basic Call Center Integration</li>
-                                <li style="margin-bottom: 1rem"> Limited Notification Options</li>
-                                <li style="margin-bottom: 1rem"> Fixed Payment Processing Fees</li>
-                                <li style="margin-bottom: 1rem"> Limited Scalability</li>
-                                <li style="margin-bottom: 1rem"> No Custom Offers</li>
-                                <li style="margin-bottom: 1rem"> Standard Efficiency</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem"> Subscription Fee Required</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem"> Additional Fees</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem"> Standard Lead Management</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem"> Basic Call Center Integration</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem"> Limited Notification Options</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem"> Fixed Payment Processing Fees</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem"> Limited Scalability</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem"> No Custom Offers</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem"> Standard Efficiency</li>
                             </ul>
                         </div>
                     </div>
@@ -1182,15 +1140,15 @@
                     <div class="evolution-text" style="margin-top: 3rem">
                         <div class=" is--bgtext-darker">
                             <ul>
-                                <li style="margin-bottom: 1rem"> $0 Subscription Fee</li>
-                                <li style="margin-bottom: 1rem"> $0 Hidden Fees</li>
-                                <li style="margin-bottom: 1rem"> Blazing-Fast Lead Fetching</li>
-                                <li style="margin-bottom: 1rem"> Seamless Call Management</li>
-                                <li style="margin-bottom: 1rem"> Real-Time Notifications</li>
-                                <li style="margin-bottom: 1rem"> Pay Only for Delivered Orders</li>
-                                <li style="margin-bottom: 1rem"> Highly Scalable and Optimized</li>
-                                <li style="margin-bottom: 1rem"> Available for Large Businesses</li>
-                                <li style="margin-bottom: 1rem"> High Efficiency with Fast Response</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem"> $0 Subscription Fee</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem"> $0 Hidden Fees</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem"> Blazing-Fast Lead Fetching</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem"> Seamless Call Management</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem"> Real-Time Notifications</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem"> Pay Only for Delivered Orders</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem"> Highly Scalable and Optimized</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem"> Available for Large Businesses</li>
+                                <li class="font-size-c" style="margin-bottom: 1rem"> High Efficiency with Fast Response</li>
 
                             </ul>
                         </div>
@@ -1205,19 +1163,19 @@
         <div class="cta__parent">
             <div class="cta__child">
                 <h2 class="h--huge is--bgtext-white text-center js-split-hero">
-                    Start <span class="js-text-underline mr-4">selling </span>today
+                    Contact us <span class="js-text-underline mr-4">today</span>
                 </h2>
                 <p class="h5 is--bgtext-gray text-center js-split-hero cta-mobile">
-                    Join now and take advantage of our powerful tools to drive sales and grow your business with ease
+                    Get in touch today and explore how our tools can help you connect with customers and grow your business effortlessly.
                 </p>
                 <div data-w-id="e61f5526-c90f-b342-b62a-cbc2e77ca2fc" class="main-button-wrapper cta-section">
-                    <a data-w-id="e61f5526-c90f-b342-b62a-cbc2e77ca2fd" href="{{}}" target="_blank" class="m-button__wrap modal-btn w-inline-block">
+                    <a data-w-id="e61f5526-c90f-b342-b62a-cbc2e77ca2fd" href="javascript:void(0)"  class="m-button__wrap modal-btn w-inline-block">
                         <div class="m-b-text">
                             <div data-w-id="e61f5526-c90f-b342-b62a-cbc2e77ca2ff" class="m-b-text-up">
-                                Get Started
+                                Send a Message
                             </div>
                             <div data-w-id="e61f5526-c90f-b342-b62a-cbc2e77ca301" class="m-b-text-static">
-                                Get Started
+                                Send a Message
                             </div>
                         </div>
                         <div class="m-b-arrow">
@@ -1239,14 +1197,5 @@
 
 
 @section('css')
-<style>
-    .svg-container {
-    display: inline-block;
-    background-color:  #3c219e;
-    border-radius: 4px; /* Optional: Adjust the radius if you want rounded corners */
-    padding: 5px; /* Optional: Add padding if you want space between the border and the SVG */
-}
-
-</style>
-    
+@vite("resources/css/app.css")
 @endsection

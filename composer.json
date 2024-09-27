@@ -10,6 +10,7 @@
     "require": {
         "php": "^8.2",
         "bensampo/laravel-enum": "^6.10",
+        "egulias/email-validator": "^4.0",
         "google/apiclient": "^2.15.0",
         "gotenberg/gotenberg-php": "^2.4",
         "guzzlehttp/guzzle": "^7.2",

@@ -3,29 +3,31 @@ import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
 
-const hostName = 'leadtonext.test';
+const hostName = 'localhost';
 
 export default defineConfig({
-    server: {
-        hmr: {
-            host: hostName,
-        },
-        host: hostName,
-        port: 5173,
-    },
+    // server: {
+    //     hmr: {
+    //         host: hostName,
+    //     },
+    //     host: hostName,
+    //     port: 5173,
+    // },
     plugins: [
         laravel({
             input: [
                 'resources/css/app.css',
                 'resources/js/app.js',
-                'resources/js/pdfPrinf.js',
-                'resources/js/call-center-app.js',
 
-                // Front office assets
-                'resources/js/frontoffice/app/app.js',
-
-
+                'resources/js/front-office/webflow.0770ec808.js',
+                // 'resources/js/front-office/gsap.min.js',
+                'resources/js/front-office/ScrollTrigger.min.js',
+                'resources/js/front-office/SplitText.min.js',
+                'resources/js/front-office/MotionPathPlugin.min.js',
+                'resources/js/front-office/main.js',
                 
+                'resources/css/front-office/main.css',
+
             ],
             refresh: [
                 'routes/**',

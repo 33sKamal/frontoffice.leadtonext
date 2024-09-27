@@ -24,7 +24,16 @@
             </a>
 
             <a href="#services" class="nav__link-wrap link-underline w-inline-block">
-              <div class="new-nav-link">Services/Mobile</div>
+              <div class="new-nav-link">Services</div>
+              <div class="w-embed">
+                <svg width="64" height="4" viewBox="0 0 64 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-dashoffset="62.03396224975586" stroke-dasharray="62.03396224975586" d="M1 3C21.7163 2.71862 42.3744 1.76039 63 1" stroke="#8247FF" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </div>
+            </a>
+
+            <a href="#mobile" class="nav__link-wrap link-underline w-inline-block">
+              <div class="new-nav-link">Mobile</div>
               <div class="w-embed">
                 <svg width="64" height="4" viewBox="0 0 64 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-dashoffset="62.03396224975586" stroke-dasharray="62.03396224975586" d="M1 3C21.7163 2.71862 42.3744 1.76039 63 1" stroke="#8247FF" stroke-width="1.5" stroke-linecap="round" />
